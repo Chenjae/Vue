@@ -34,3 +34,9 @@
     }
   }
 </script>
+
+<style>
+  .title {
+    color:red;
+  }
+</style>
