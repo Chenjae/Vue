@@ -85,6 +85,7 @@ const routes = [
         color: route.query.color
     })
   },
+  
   ...menu02
 ]
 

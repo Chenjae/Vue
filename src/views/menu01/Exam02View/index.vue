@@ -5,7 +5,6 @@
             <span class="title">Exam02View (non-scoped Style)</span>
         </div>
         <div class="card-body">
-            
             <h6>프로그래밍 방식 화면 이동</h6>
             <button class="btn btn-sm btn-info mr-2" v-on:click="goUrl">/menu01/exam01view</button>
             <button class="btn btn-sm btn-info mr-2" v-on:click="goUrl()">/menu01/exam01view</button>
