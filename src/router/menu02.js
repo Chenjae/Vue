@@ -18,5 +18,13 @@ export default [
     {
         path: "/menu02/exam05forrepeatbinding",
         component: () => import(/* webpackChunkName: "menu02" */ '../views/menu02/Exam05ForRepeatBinding')
+    },
+    {
+        path: "/menu02/exam06computedbinding",
+        component: () => import(/* webpackChunkName: "menu02" */ '../views/menu02/Exam06ComputedBinding')
+    },
+    {
+        path: "/menu02/exam07template",
+        component: () => import(/* webpackChunkName: "menu02" */ '../views/menu02/Exam07Template')
     }
 ]

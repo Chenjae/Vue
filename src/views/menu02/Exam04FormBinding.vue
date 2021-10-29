@@ -129,7 +129,7 @@ export default {
             console.log(this.product);
         }
     },
-    //데이터가 변경되면 자동 계산되는 속성
+    //데이터가 변경되면 자동 계산되는 속성, 데이터가 바뀌었을 때만 실행되어 메소드보다 성능이 좋다
     computed: {
         disabledRegButton() {
             var result = this.product.name === "" || this.product.company === "";
