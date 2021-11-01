@@ -2,24 +2,25 @@
 <template>
     <div class="card">
         <div class="card-header">
-            ChildA
+            ChildB
         </div>
         <div class="card-body">
-            <p>prop1: {{prop1}}</p>
-            <p>prop2: {{prop2}}</p>
-            <p>productNo: {{productNo}}</p>
-            <p>productKind: {{productKind}}</p>
-            <p>productPrice: {{productPrice-1}}</p>
+            <p>provideData1: {{provideData1}}</p>
+            <p>provideData2: {{provideData2}}</p>
+            <hr/>
+            <child-c/>
         </div>
     </div>    
 </template>
 
 <script>
+import ChildC from "./ChildC.vue";
 export default {
     //컴포넌트의 대표이름 (devtools에 나오는 이름)
-    name: "ChildA",
+    name: "ChildB",
     //추가하고 싶은 컴포넌트 등록
     components: {
+        ChildC
     },
     //컴포넌트 데이터 정의
     data: function() {
@@ -29,14 +30,11 @@ export default {
     //컴포넌트 메소드 정의
     methods: {
     },
-    //카멜 케이스로 작성해야한다.
-    //부모에서 사용하려면 아래 5개의 props를 제공해야한다.
-    props: [
-        "prop1",
-        "prop2",
-        "productNo",
-        "productKind",
-        "productPrice"
+    //부모로부터 전달된 데이터 삽입
+    //자식의 데이터처럼 사용이 가능
+    inject: [
+        "provideData1",
+        "provideData2",
     ]
 }
 </script>

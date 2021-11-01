@@ -13,9 +13,11 @@
 
             <hr/>
             <h6>배열 항목 반복</h6>
-            <span v-for="(photo, index) in photos" :key="index">
-                <img :src="require(`@/assets/photos/${photo}`)" height="150" class="m-1" v-if="index<=2"/>
-            </span>
+            <div>
+                <span v-for="(photo, index) in photos" :key="index">
+                    <img :src="require(`@/assets/photos/${photo}`)" height="150" class="m-1"/>
+                </span>
+            </div>
 
             <hr/>
 
