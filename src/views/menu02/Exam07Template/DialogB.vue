@@ -53,6 +53,6 @@ export default {
 <!-- 컴포넌트 스타일 정의 -->
 <style scoped>
     .modal-container {
-        width: 800px;
+        width: 1000px;
     }
 </style>
